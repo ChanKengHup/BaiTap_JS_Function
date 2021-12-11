@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>BaiTap_JS_Function</h1>
+    <!-- Bài Tập 1 -->
+    <div class="excercise1">
+        <h2>Xét kết quả thi của học sinh</h2>
+        <div class="input">
+            <input type="number" placeholder="Điểm chuẩn" id="inputPoint">
+            <select name="" id="area">
+                <option value="0">Chọn khu vực</option>
+                <option value="X">X</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <select name="0" id="object">
+             <option value="0">Chọn đối tượng</option>
+             <option value="0">0</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+         </select>
+        </div>
+        <div class="point">
+            <input type="number" placeholder="Điểm môn thứ 1" id="inputPoint1">
+            <input type="number" placeholder="Điểm môn thứ 2" id="inputPoint2">
+            <input type="number" placeholder="Điểm môn thứ 3" id="inputPoint3">
+        </div>
+        <button onclick="calculatorResult()" class="btn btn--primary btn-primary">Kết quả</button>
+        <p class="show" id="excercise1__show"></p>
+
+    </div>
+    <!-- Bài Tập 2 -->
+    <div class="excercise2">
+        <input type="text" placeholder="Nhập họ tên" id="inputElectric1">
+        <input type="number" placeholder="Nhập số KW" id="inputElectric2">
+        <button onclick="calculatorElectric()" class="btn btn--primary btn-primary">Tính tiền điện</button>
+        <p class="show" id="electric1__show"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

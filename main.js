@@ -141,6 +141,6 @@
  }
 
  function showElectric(total,nameInput) {
-     document.getElementById("electric1__show").innerHTML = "Họ tên: " + nameInput +", " + new Intl.NumberFormat('it-IT', { currency: 'VND', style : 'currency'}).format(total)
+     document.getElementById("electric1__show").innerHTML = "Họ tên: " + nameInput +", " + "Tiền điện: " + new Intl.NumberFormat('it-IT', { currency: 'VND', style : 'currency'}).format(total)
      document.getElementById("electric1__show").style.display = "block"
  }

@@ -31,7 +31,7 @@
     //  tổng điểm sau khi lựa chọn
      var totalPoint = Number(point1) + Number(point2) + Number(point3) + Number(areaResult) + Number(objectResult)
      
-     result(standardPoint, totalPoint)
+     result(standardPoint, totalPoint, point1, point2,point3)
      
  }
 
@@ -69,11 +69,15 @@
  }
  
 //  xét kết quả sau khi có điểm chuẩn và tổng điểm thi
- function result(standardPoint, totalPoint) {
+ function result(standardPoint, totalPoint,  point1, point2,point3) {
      if (totalPoint == 0 && standardPoint == 0) {
         document.getElementById("excercise1__show").innerHTML = "Vui lòng nhập điểm và lựa chọn đối tượng, khu vực của bạn"
         document.getElementById("excercise1__show").style.display = "block"
 
+    }
+    else if (point1 == 0 || point2 == 0 || point3 == 0) {
+        document.getElementById("excercise1__show").innerHTML = "Bạn đã rớt. Do có môn nhỏ hơn hoặc bằng 0 " 
+        document.getElementById("excercise1__show").style.display = "block"
     }
     else if(totalPoint >= standardPoint ) {
         document.getElementById("excercise1__show").innerHTML = "Chúc mừng bạn đã đậu. Làm chầu nào :D ." + "Tổng điểm: " + totalPoint
@@ -144,3 +148,5 @@
      document.getElementById("electric1__show").innerHTML = "Họ tên: " + nameInput +", " + "Tiền điện: " + new Intl.NumberFormat('it-IT', { currency: 'VND', style : 'currency'}).format(total)
      document.getElementById("electric1__show").style.display = "block"
  }
+
+
